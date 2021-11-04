@@ -20,7 +20,6 @@
                 <ul class="nav navbar-nav">
                     <li><a href="/">Home</a></li>
             </div>
-             <div>
             <ul class="nav navbar-nav navbar-right">
               {% if current_user.is_authenticated %}
               <li style="color:white;padding:15px;">{{current_user.username}}</li>
@@ -29,7 +28,6 @@
               <li><a href="{{url_for('auth.login')}}">Sign in</a></li>
               {%endif%}
             </ul>
-          </div>
         </div>
     </div>
   </body>
